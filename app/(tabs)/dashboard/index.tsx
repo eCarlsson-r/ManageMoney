@@ -67,11 +67,11 @@ export default function Dashboard() {
         title: 'ControlMoney',
         headerRight: () => (
           <Pressable onPress={exitApp} hitSlop={10}>
-            <MaterialCommunityIcons name="exit-to-app" size={24} color="#d32f2f" />
+            <MaterialCommunityIcons name="exit-to-app" size={24} color="#3957ce" />
           </Pressable>
         )
       }} />
-      <Image src='../../assets/banner.png'></Image>
+      <Image source={require('../../../assets/images/banner.png')} style={styles.logo} resizeMode="cover" />
 
       <ScrollView contentContainerStyle={styles.content}>
         <Card style={styles.card}>
@@ -80,11 +80,11 @@ export default function Dashboard() {
             left={(props) => <MaterialCommunityIcons {...props} name="flash" size={24} />}
           />
           <Card.Content style={styles.quickActions}>
+            <Button mode="contained" buttonColor="#d32f2f" onPress={() => router.navigate('/managebooks')}>
+              Manage Books
+            </Button>
             <Button mode="contained" buttonColor="#2d7d30" onPress={() => router.navigate('/bookkeeping')}>
               Bookkeeping
-            </Button>
-            <Button mode="contained" buttonColor="#3957ce" onPress={() => router.navigate('/managebooks')}>
-              Manage Books
             </Button>
           </Card.Content>
         </Card>
@@ -178,6 +178,9 @@ export default function Dashboard() {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
+  logo: {
+    width: '100%'
+  },
   content: {
     padding: 16,
     gap: 12,
@@ -236,4 +239,3 @@ const styles = StyleSheet.create({
     opacity: 0.7,
   },
 });
-

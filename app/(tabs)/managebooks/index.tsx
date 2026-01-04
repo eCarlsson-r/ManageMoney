@@ -72,7 +72,7 @@ export default function ManageBooks() {
             headerRight: () => (
               <Link href="/newbook" asChild>
                 <Pressable>
-                  <MaterialCommunityIcons name="book-plus" size={28} color="#3957ce" />
+                  <MaterialCommunityIcons name="book-plus" size={28} color="#d32f2f" />
                 </Pressable>
               </Link>
             )
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    color: '#3957ce',
+    color: '#d32f2f',
     marginBottom: 8,
   },
   subtitle: {
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 12,
     paddingHorizontal: 16,
-    backgroundColor: '#3957ce',
+    backgroundColor: '#d32f2f',
     borderRadius: 4,
     alignItems: 'center',
   },

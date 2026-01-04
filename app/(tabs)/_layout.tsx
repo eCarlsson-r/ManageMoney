@@ -3,13 +3,13 @@ import { Tabs } from 'expo-router';
 
 export default function TabsLayout() {
   return (
-    <Tabs screenOptions={{ headerShown: false }}>
+    <Tabs initialRouteName="dashboard" screenOptions={{ headerShown: false }}>
       <Tabs.Screen
-        name="bookkeeping"
+        name="managebooks"
         options={{
-          title: 'Bookkeeping',
+          title: 'Manage Books',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="pen" size={size} color={color} />
+            <MaterialCommunityIcons name="bookshelf" size={size} color={color} />
           ),
         }}
       />
@@ -23,11 +23,11 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
-        name="managebooks"
+        name="bookkeeping"
         options={{
-          title: 'Manage Books',
+          title: 'Bookkeeping',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="bookshelf" size={size} color={color} />
+            <MaterialCommunityIcons name="pen" size={size} color={color} />
           ),
         }}
       />

@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    color: "#3957ce",
+    color: "#d32f2f",
     marginBottom: 8,
   },
   desc: {
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   pickerDoneButton: {
-    color: '#3957ce',
+    color: '#d32f2f',
     fontSize: 16,
     fontWeight: '600',
   },
@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
   button: {
     paddingVertical: 10,
     paddingHorizontal: 16,
-    backgroundColor: "#3957ce",
+    backgroundColor: "#d32f2f",
     borderRadius: 4,
     marginRight: 12,
   },
