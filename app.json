@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "ManageMoney",
-    "slug": "ManageMoney",
+    "name": "ControlMoney",
+    "slug": "ControlMoney",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "managemoney",
+    "scheme": "controlmoney",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -38,7 +38,9 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-sqlite",
+      "@react-native-community/datetimepicker"
     ],
     "experiments": {
       "typedRoutes": true,
